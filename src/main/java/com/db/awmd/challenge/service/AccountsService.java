@@ -52,7 +52,7 @@ public class AccountsService {
 
     //Notify
     notificationService.notifyAboutTransfer(accountToTransferFrom, transferDto.getAmount()+" Transferd to "+ transferDto.getAccountToId());
-    notificationService.notifyAboutTransfer(accountToTransferFrom, transferDto.getAmount()+" Received from "+ transferDto.getAccountFromId());
+    notificationService.notifyAboutTransfer(accountToTransferTo, transferDto.getAmount()+" Received from "+ transferDto.getAccountFromId());
 
   }
 }
